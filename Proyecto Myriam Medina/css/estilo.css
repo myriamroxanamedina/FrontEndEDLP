@@ -1,39 +1,63 @@
 body {background-color: green; }
 h1 {background-color: white;
 }
-p  {color: yellow; }
-p {font-size: large; }
+p {font-size: large;
+font-style: oblique;}
 h1 {color: blue; }
 h2 {color: brown; }
 p {text-align: justify;}
+
+ul:hover {color: red;
+font-size: 20px;
+background-color: lightblue;
+
+}
+h1:hover {color: pink;
+font-family: cursive;
+font-size: 40px;}
+h2:hover {color: violet;
+font-style: italic;
+font-size: 40px;
+background-color: white;
+}
+img:hover {
+  width: 25%;
+  border-radius: 50%
+
+}
 
 header { background-color: yellow;
 
 }
 section { background-color: orange;
-  width: 48%;
+  width: 40%;
+  float: left;
   margin: 1%;
   padding: 10px;
   border: 3px solid black;
   overflow: auto;
+  box-sizing: border-box;
+  height: 300px;
+
 
 
 }
 
 aside { background-color: white;
-  width: 40%;
-float: right;
+width: 40%;
+
+float: left;
 margin: 1%
 padding: 10px;
 border: 3px solid black;
 overflow: auto;
-
-
+box-sizing: border-box;
+height: 300px;
 
 }
 
 footer {background-color: blue;
   width: 30%;
-float:left;
+float:right;
 
 }
