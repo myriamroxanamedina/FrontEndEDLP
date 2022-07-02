@@ -13,11 +13,11 @@
   <link rel="stylesheet" href="./css/estilo.css ">
 </head>
 <body>
-  <header>
-    <nav>
+  <header id="header">
+    <nav id ="nav">
     <a href="#inicio">Inicio</a>
     <a href="https:/www.google.com">Sobre mi</a>
-    <a href="#servicio">Servicios</a>
+    <button class="cambiar" onclick="inclusive">Sitio inclusivo</button>
     <a href="#portfolio">Portfolio</a>
     <a href="#contacto">Hello</a>
     <a href="./contacto.html">Contacto</a>
@@ -38,9 +38,10 @@
 <br>
 </header>
 <br>
+<main id="main">
   <h1>Recetas Argentinas</h1>
 
-  <section>
+  <section id="section">
       <h2>LOCRO CRIOLLO</h2>
     <img src="imagenes/receta-de-locro-criollo.jpg " alt="foto de locro">
   <br>
@@ -63,10 +64,11 @@
           </div>
           <br><br>
   </section>
+  </main>
       <br>
       <br>
       <br>
-      <aside>
+      <aside id="aside">
       <h3>Ingredientes</h3>
 
         <ul>
@@ -108,7 +110,7 @@
                       recipiente aparte para incorporar a gusto.</li>
 
                     </ol>
-                     </aside>
+
                  <br>
                  <br>
                   <br>
@@ -118,41 +120,11 @@
                   <audio src="./audios/sonido locro.ogg" controls>
 
                   </audio>
+                  <div class="mapa">
+                   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7169.224798702816!2d-64.64862602616098!3d-26.04623524479358!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9418115e172678f3%3A0xf6d9c7e3c2482ea5!2sEl%20Potrero%2C%20Salta!5e0!3m2!1ses!2sar!4v1650323820607!5m2!1ses!2sar" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                       </div>
+                   </aside>
                   <br>
-                  <footer>
-                    <div class="contenedor-footer">
-                      <p>Contáctenos</p>
-                          </div>
-                          <div class="Redes">
-                            <h4> Instagram </h4 >
-                              <a href="https:/www.instagram.com/potrerodigital"><img class="icono ig"
-                                src="iconos/inst.png"></a>
-                                <h4> Correo electrónico</h4>
-                                <a href="compromisodigital@compromiso.org"><img class="icono correo"
-                                src="iconos/correo1.png"></a>
-                              <h4>Whats App</h4>
-                                <a href="https://api.whatsapp/send?phone=541165807735&text=Hola%21%20Necesitas%20m%C3%A1s%20informaci%C3%B3n%20?." class="float" target="_blank"> <img src="iconos/wapp1.png" alt=""</a>
-                                 </div>
-                               <br>
-                              <br>
-                               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7169.224798702816!2d-64.64862602616098!3d-26.04623524479358!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9418115e172678f3%3A0xf6d9c7e3c2482ea5!2sEl%20Potrero%2C%20Salta!5e0!3m2!1ses!2sar!4v1650323820607!5m2!1ses!2sar" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-               <form>
-                 <div class="formulario">
-                 <br>
-                      <br>
-                      <p>Formulario</p>
-                      <label for="nombre">Nombre y Apellido</label>
-                      <input type="text" name="nombre" value="escribir nombre">
-                      <br>
-                      <label for="e mail">Correo electrónico</label>
-                      <input type="text" name="email" value="escribir correo">
-                      <br>
-                      <label for="mensaje">Mensaje</label>
-                      <textarea name="name" rows="10" cols="80">Mensaje</textarea>
-                      <input class="xx" type="submit" value="enviar">
-                          </div>
-                    </form>
-                  </footer>
                   <div class="container-fluid">
                     <div class="row">
                       <div class="col-sm-12 col-md-6 col-lg-3">
@@ -197,6 +169,46 @@
 </div>
 </div>
   </div>
+  <footer id ="footer">
+
+      <p>Contáctenos</p>
+
+          <div class="Redes">
+            <h4> Instagram </h4 >
+              <a href="https:/www.instagram.com/potrerodigital"><img class="icono ig"
+                src="iconos/inst.png"></a>
+                <h4> Correo electrónico</h4>
+                <a href="compromisodigital@compromiso.org"><img class="icono correo"
+                src="iconos/correo1.png"></a>
+                  </div>
+                <div class="wimg">
+                  <h4>Whats App</h4>
+                <a href="https:/wa.me/5491165807735"target="_blank"><img src="iconos/wapp1.png" alt=""></a>
+                  </div>
+               <br>
+              <br>
+<form>
+ <div class="formulario">
+ <br>
+      <br>
+      <p>Formulario</p>
+      <label for="nombre">Nombre y Apellido</label>
+      <input type="text" name="nombre" value="escribir nombre">
+      <br>
+      <label for="e mail">Correo electrónico</label>
+      <input type="text" name="email" value="escribir correo">
+      <br>
+      <label for="mensaje">Mensaje</label>
+      <textarea name="name" rows="10" cols="80">Mensaje</textarea>
+      <input class="xx" type="submit" value="enviar">
+          </div>
+    </form>
+<button class="autor" onclick="copy()">Copyright 2022</button>
+  </footer>
+  <script> alert ("Bienvenidos a Recetas Argentinas")
+
+  </script>
+  <script src="js/javascript.js"></script>
                                 <!-- JavaScript Bundle with Popper -->
                   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
                </body>
